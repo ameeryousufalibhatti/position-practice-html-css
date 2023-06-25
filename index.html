@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ameer Yousuf Ali Bhatti</title>
+    <style>
+        .box{
+            border: 2px solid red;
+            width: 200px; 
+            height: 200px;
+            margin: 2px;
+            text-align: center;
+            display: inline-block;
+        }
+        /*Position static, absolute, fixed, relative, sticky */
+        #box1{
+            position: static;  /* By default normal psoition*/
+        }
+        #box2{
+            position: absolute;
+            top: 34px;
+            left: 34px;
+            right: 34px;
+            bottom: 2px;
+            /*Move from old position don't leaves gap in old postion*/ 
+        }
+        #box3{
+            /*
+            position : fixed; don't move when scrolling 
+            */
+            /*
+            position : sticky; moves when scrolling
+            */
+        }
+        #box4{
+            position: relative;
+            top: 34px;
+            left: 34px;
+            right: 34px;
+            bottom: 2px;
+            /*Move from old position leaves gap in old position in parent child relation it is relative to parent*/ 
+        }
+        .cont{
+            background-color: khaki;
+        }
+    </style>
+</head>
+<body>
+    <div class="cont">
+        <div class="box" id="box1">1</div>
+        <div class="box" id="box2">2</div>
+        <div class="box" id="box3">3</div>
+        <div class="box" id="box4">4</div>
+    </div> 
+</body>
+</html>
